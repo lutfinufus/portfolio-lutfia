@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Portfolio Details</title>
+    
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    
+    <!--<link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />-->
+
+    <!-- Template Main CSS File -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!--===========================================Breadcrumbs Section ===============================-->
+
+    <main class="main">
+
+      <!-- Page Title -->
+      <div class="page-title" data-aos="fade">
+        <div class="container d-lg-flex justify-content-between align-items-center">
+          <h1 class="mb-2 mb-lg-0">Portfolio Details</h1>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li class="current">Portfolio Details</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <!--=========================================== End Page Title ================================-->
+      
+
+      <!-- ======= Portfolio Details Section ======= -->
+      <div id="portfolio-details" class="portfolio-details">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider">
+                <div class="align-items-center">
+                  <img src="img/4/vehicle.JPG" alt="" width=400 height=500/>
+                
+                </div>
+            </div>
+          </div>
+          
+           
+            <!-----------------------=========SLIDER==================================-->
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Domain</strong>: Computer Vision (CV)</li>
+                  <li><strong>Category</strong>: Deep Learning</li>
+                  <li>
+                    <strong>Video Testing</strong>: 
+                    <a href="https://drive.google.com/file/d/1OPE091SCyK6tSLBap2wJgSiJY49zvYjC/view?usp=sharing" target="_blank">Vehicle Detection</a>
+                  </li>
+                  <li><strong>Technical Skills</strong>: Streamlit, Python, YOLO Algorithms</li>                  
+                  <li>
+                    <strong>Data Source:</strong> CCTV ATCS Kota Bandung                    
+                  </li>
+                </ul>
+              </div>
+              </div>
+              <!--===================AUTHOR===============================-->
+              <div class="col-lg-4">
+                <img class="circular--square" src="img/5/me.jpg" width=50 height=50/>
+                Sepetember 07, 2024 by <u>Lutfia Hayatun Nufus</u>     
+              </div>
+
+              <!--========================================================PROJECT-->
+              <div class="portfolio-description">
+                <h3>Detection, Classification, Tracking, and Counting of Vehicle Types</h3>
+                <p>
+                  &nbsp;Large vehicles can impact traffic flow, leading to a reduction in vehicle speed. One potential solution to address this issue is the development of a system that integrates the processes of calculation, classification, 
+                  and tracking for various types of vehicles. In response to this problem, the authors propose a system that automatically estimates traffic density based on vehicle types. The categories of vehicles analyzed include mini buses, 
+                  trucks, SUVs-MPVs, pick-ups, and buses. Bandung, as the capital city of West Java, attracts significant interest from various sectors, resulting in high mobility. Consequently, the research location is selected in Bandung city, and system testing is conducted using video recordings from the CCTV ATCS.
+                </p>
+                  <img class="center zoom" src="img/4/CCTV.png" alt="ERD" width=480 height=280/>
+                  <br><p>
+                  &nbsp;Object detection is a complex and crucial field within Computer Vision (CV), involving both object classification and localization. This process aims to accurately determine the position of objects and identify various predefined object categories.
+                  Currently, in the field of computer vision and deep learning, various algorithms are widely used to classify images within datasets.
+                  You Only Look Once (YOLO) has become one of the most popular deep learning frameworks, featuring an open-source library based on PyTorch and utilizing a single-stage method for object detection.
+                  YOLO operates by dividing the input image into a grid of size SxS and generating predictions for bounding boxes and object class probabilities, as illustrated in the image below.</p>
+                  <img class="center zoom" src="img/4/YOLO-framework.JPG" alt="ERD" width=400 height=300/>
+                  
+                  <br><p>&nbsp;The author utilizes YOLOv8, the eighth version of YOLO, released in January 2023 by Ultralytics. YOLOv8 is used as the detection algorithm and combined with BoTSORT for tracking. YOLOv8 offers improvements in object detection accuracy and speed compared to previous versions. BoTSORT, 
+                    a reliable tracking-by-detection algorithm, ensures effective multi-object tracking. The combination of these two algorithms enables efficient monitoring by detecting and tracking various types of vehicles in real-time.</p>
+                  
+                  <p>&nbsp; The annotated vehicle dataset consists of 1,165 images, divided into 70% training data, 20% testing data, and 10% validation data. This dataset division is designed to ensure that the model learns effectively while preventing overfitting and underfitting. The training data is used to train the model, the validation data is responsible for evaluating model performance during training and optimizing hyperparameters, 
+                    while the testing data is utilized to assess the final accuracy of the model on previously unseen data.            
+                  </p>
+                    <figure><img class="center zoom" src="img/4/datasets.JPG" alt="ERD" width=450 height=350/><figcaption>
+                      The annotation is conducted using bounding boxes, each labeled according to the predetermined vehicle type for each instance. Following the completion of the annotation process, the dataset is divided into several parts: training data, testing data, and validation data.
+                    </figcaption></figure>
+                  
+                  <br><p>After the data is processed, the next step is to determine the hyperparameters for model training according to specific needs. The author uses the YOLOv8 Nano model with an image size of 640 to ensure consistency and sets the number of epochs to 100. Proper selection of hyperparameters aims to enhance model accuracy 
+                      and ensure efficient convergence. To facilitate the model training process and minimize computational load, Google Colaboratory with free access to Tesla T4 GPUs is utilized. After the training process is completed, resulting Precision (P), Recall (R), mAP50, and mAP50-95 values close to 1 indicate that the model exhibits strong object detection performance. 
+                      These values also suggest that the model effectively learns from the training data, enabling accurate and consistent object identification across various conditions.</p>
+                      <figure><img class="center zoom" src="img/4/grafik yolov8.JPG" alt="ERD" width=450 height=280/><figcaption>In this image, the precision, recall, and mAP graphs for both the training and validation data can be observed to verify that the resulting parameters have high values. Additionally, the loss function graphs, including box loss, class loss, 
+                        and dfl loss, demonstrate a steady decrease as the number of epochs increases during the model training process. These loss values must be minimized to ensure the model achieves optimal performance.</figcaption></figure>
+                      <figure><img class="center zoom" src="img/4/confusion matrix.JPG" alt="ERD" width=450 height=350/><figcaption>The results from the confusion matrix table in this image for each vehicle type indicate that the diagonal from the top left to the bottom right reflects correct predictions of the model, while the areas outside the diagonal represent incorrect predictions.</figcaption></figure>
+                    
+                  <br><p>Then, the author designed a simple website interface using the Python-based Streamlit library, utilizing Visual Studio Code, to deploy the trained model in combination with BoTSORT. This website provides a feature for uploading CCTV vehicle video recordings for system testing. The system is capable of detecting objects within the uploaded videos and saving the detection results. Additionally, the interface allows users to view the detection results in real-time and analyze system performance.</p>
+                  
+                    <figure><img class="center" src="img/4/web.png" alt="Visualization Data" width=430 height=530/><figcaption>The system operates through several key steps: first, it performs detection, classification, and tracking using bounding boxes according to the predefined vehicle categories. Once a vehicle crosses the detection boundary in zone 2, the system automatically counts the number of vehicles based on their type. 
+                      The system was tested using CCTV video recordings of vehicles that were not involved in the training process. The testing results indicate an average accuracy of 98.45%. Additionally, the system is 
+                      designed to handle various lighting conditions and viewpoints, ensuring that detection accuracy remains high across different real-world scenarios.</figcaption></figure>   
+                  
+              </div>
+            </div>
+            </div>
+        </div>
+        
+                
+      </section>
+      <!-- End Portfolio Details Section -->
+    </main>
+    <!-- End #main -->
+    
+
+    <a href="#" class="btn btn-lg btn-light btn-lg-square back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    
+
+    <!-- Template Main JS File -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

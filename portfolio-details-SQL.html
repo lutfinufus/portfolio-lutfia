@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Portfolio Details</title>
+    
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!--===========================================Breadcrumbs Section ===============================-->
+
+    <main class="main">
+
+      <!-- Page Title -->
+      <div class="page-title" data-aos="fade">
+        <div class="container d-lg-flex justify-content-between align-items-center">
+          <h1 class="mb-2 mb-lg-0">Portfolio Details</h1>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li class="current">Portfolio Details</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <!--=========================================== End Page Title ================================-->
+
+      <!-- ======= Portfolio Details Section ======= -->
+      <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+          <div class="row gy-4">
+            <!---->
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider">
+                <div class="align-items-center">
+                  <img src="img/5/bg2.jpg" alt="" width=430 height=570/>
+                  
+                </div>
+               
+              </div>
+            </div>
+            <!-----------------------=========SLIDER==================================-->
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Category</strong>: Data Analysis - SQL</li>                         
+                  <li>
+                    <strong>Desc</strong>: Dummy project
+                    <!--<a href="#">www.example.com</a>-->
+                  </li>
+                  <li><strong>Technical skill</strong>: MySQL</li>
+                </ul>
+              </div>             
+              
+              <div class="portfolio-info">
+                <h3>Summary</h3>
+                <p>This project involves analyzing datasets from a shipping company by using Entity-Relationship Diagrams (ERDs) to model the interactions and relationships between entities. 
+                  SQL commands are then used to query and analyze the data, including complex operations such as aggregation functions, join operations, and the utilization of ORDER BY and GROUP BY clauses, etc.</p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+              <img class="circular--square" src="img/5/me.jpg" width=50 height=50/>
+              August 10, 2024 by <u>Lutfia Hayatun Nufus</u>     
+              </div>
+              <div class="portfolio-description">
+                <h3>Lorenzo Shipping Company Analysis</h3>
+                <p>
+                  &nbsp;In this project, I will explain how I analyzed the shipping company datasets obtained from the data.world website. 
+                  I will detail the methods used to examine various aspects of the data, including customer metrics, shipment volumes, annual revenue, 
+                  and operational details such as the number of trucks and drivers. Additionally, I will discuss the insights gained from the analysis, 
+                  how these insights contribute to understanding market trends and the implications for strategic decision-making.
+                  This analysis involved utilizing SQL and exploring several essential commands to process a large volume of raw datasets</p>
+                  
+                  <p>&nbsp;SQL (Structured Query Language) is a standard language for storing, manipulating, cleaning, 
+                  and retrieving data in a Relational Database Management System (RDBMS), thereby enabling the execution 
+                  of activities on databases consisting of multiple tables and rows with large datasets. SQL can be integrated with various platforms, 
+                  such as Python. MySQL is an open-source Relational Database Management System (RDBMS) for data storage, aiding developers in creating data-driven applications. 
+                  This project aims to discover useful information and suggest conclusions from the Lorenzo Shipping Company files, by utilizing tools:
+                  <img class="center zoom" src="img/5/tools.png" alt="ERD" width=400 height=300/>
+                  </p>
+
+                  <br><h5>ERD (Entity Relationship Diagram) in Database Design</h5>
+                  <p>&nbsp;To design an Entity-Relationship Diagram (ERD), the initial step is to analyze the project summary to identify entities, attributes, and relationships. 
+                    A unique identifier is used to distinguish one entity from another and can connect to one or more entities. An attribute is a characteristic that describes an entity.                   
+                    <br><figure><img class="center zoom" src="img/5/ERD.JPG" alt="ERD" width=480 height=400/><figcaption>      
+                      This ERD image contains attributes, represented by the primary keys (PK) of entities, which uniquely identify each record. Additionally, foreign keys (FK) are used to establish relationships between entities.
+                    </figcaption></figure></p>                
+                  <br><h4>Data Preparation</h4>
+                  <p>In this process, raw data is prepared for further processing by importing datasets from CSV files, including:
+                    <ul>
+                      <li>City</li>
+                      <li>Customer</li>
+                      <li>Driver</li>
+                      <li>Shipment</li>
+                      <li>Truck</li>
+                    </ul>
+                  </p>
+                  <h5>1. Data Definition Language (DDL)</h5>
+                  <p>DDL (Data Definition Language) is a set of SQL commands used to define the database structure or schema, including tasks such as creating, modifying, and deleting database objects.
+                   
+                  <ul>
+                    <li><code>CREATE</code>: A command used to create a new database or table involves specifying the details of columns. A table can have multiple columns, each defined by name, data type, and optionally, 
+                      constraints such as whether the column requires a value (NOT NULL) or adheres to referential integrity (e.g., primary key, foreign key) according to the data requirements. Below are the data types used in this project:
+                      <ul type="circle">                    
+                        <li>Integer (INT())</li>
+                        <li>Variabel Character (VARCHAR())</li>
+                        <li>Decimal (M, D)</li>
+                        <li>Datetime: format "YYY-MM-DD HH:MI:SS"</li>
+                        <li>Date: format "YYY-MM-DD"</li>
+                        <li>Year: format "YYY"</li>
+                        <li>Text</li></ul>                                   
+                      <figure><img class="center zoom" src="img/5/database.JPG" alt="create database" width=260 height=110/>
+                      <br><img class="center zoom" src="img/5/create-table.JPG" alt="create table" width=260 height=120/>
+                      
+                      <figcaption>The CREATE DATABASE statement is used to create a new database, while the CREATE TABLE statement is used to define the structure of a new table within that database (including names, data types, and other details). This is illustrated by the truck table I created</figcaption></figure>
+                    </li>         
+                     
+                </ul></p>
+                
+                <h5>2. DML (Data Manipulation Language)</h5>
+                  <p>After importing the datasets from CSV files into MySQL database, check each entry individually to ensure that the data has loaded correctly. 
+                    The following commands are used:
+                    <ul>
+                      <li><code>SELECT</code>: A command used to retrieve and display specific data from a table.
+                            
+                                          
+                      <figure><img class="center zoom" src="img/5/select.JPG" alt="select statement" width=220 height=250/>
+                              <img class="center zoom" src="img/5/city-table.JPG" alt="city table" width=480 height=200/>
+                      <figcaption>This image displays a selection from the 'city' table using the SELECT * statement.</figcaption>
+                      </figure></li>
+                      
+                      
+                      
+                      <li><b>Copying raw data and inserting new data</b> similar to the existing data for further processing aids in maintaining the original data. 
+                        This is accomplished by creating a new table and inserting similar data using the <code>INSERT</code> and LIKE commands.
+                        <figure><img class="center zoom" src="img/5/insert.JPG" alt="INSERT Command" width=200 height=200/><figcaption>
+                          Using the CREATE TABLE ... LIKE statement creates an empty table that matches the structure of another table, including all columns, attributes, and indexes defined in the original table. 
+                          This image displays a selection from the 'city' table to create a new table and insert similar data</figcaption></figure>
+                      </li></ul></p>
+                    
+                    
+                  <br><h4>Data Cleaning</h4>
+                  <p>This process aims to identify and correct inconsistent data, such as duplicates, 
+                    missing values, and other discrepancies. It ensures that the data is accurate and consistent, 
+                    thereby facilitating easier analysis and reporting.
+                  </p>
+                    <h5>Identify Duplicates</h5>
+                    <p>Duplicate values in each column are generally not allowed in data tables but can be present in new, raw, or uncontrolled data. To verify whether a column contains duplicates, the following SQL command can be used:                            
+                      <ul>
+                        <li><code>COUNT</code>: An aggregate function that counts all rows or specific rows, identifying records that match certain conditions.</li>                        
+                        <li><code>GROUP BY</code>: A clause used to group all rows based on the same column value. This clause is typically used with aggregate functions such as COUNT, MAX, MIN, SUM, AVG, etc. The HAVING clause is used with GROUP BY to exclude groups that do not fulfill certain criteria.                  
+                        <figure><img class="center zoom" src="img/5/duplicate.JPG" alt="duplicate Command" width=430 height=300/>
+                        
+                        <figcaption>To determine the total number of records in each column, use the COUNT(*) function. The GROUP BY clause is used to group all rows with identical values, which consists of multiple columns such as 'make' and 'model year'. The HAVING clause is then used to filter these results after the GROUP BY operation. 
+                          By utilizing the COUNT() function within the HAVING clause to check if any group contains more than one element, duplicate groups can be identified.
+                         </figcaption></figure></li>
+                          
+                          <li><code>WHERE</code>: This clause is used to specify criteria or conditions for retrieving data from a table. When combined with the AND logical operator, it ensures that all specified criteria are fulfilled for the query to execute.
+                            <figure><img class="center zoom" src="img/5/where.JPG" alt="where statement" width=380 height=320/>
+                              <br><img class="center zoom" src="img/5/duplicat-check.JPG" alt="duplicate check Command" width=260 height=150/>
+                              <img class="center zoom" src="img/5/duplicat-check-result.JPG" alt="duplicate result" width=500 height=150/>
+                            <figcaption>To determine whether duplicates exist, check the shipment_staging table for truck_id = 9 and truck_id = 10 using the WHERE clause. The results indicate that there are no duplicates in any of the data columns.
+                            </figcaption>
+                            </figure></li>                
+                    </ul>
+                    </p> 
+                   
+
+                    <h4>Analyze the Data</h4>
+                    <p>In this stage, I will explore the information from all datasets included in this project. The list of questions will be addressed, followed by the query inputs and the resulting outputs. These results will be used to create a dashboard that represents the answers to the most critical components, thereby addressing the business problems.
+  <!--=============================================QUESTION 1=================================================================-->
+                      <blockquote><b>Question 1:
+                        <br>What state and city generate the highest and lowest annual revenue?
+                        <br><br>Source table: customer_staging
+                      </b></blockquote></p>                      
+                    <p><em>States</em>
+                      <br>Firstly, determine what states are among the top 10 with the highest and lowest annual revenue. Then, proceed to the cities. For the states, this can be determined using the following code:
+                      <figure><img class="center zoom" src="img/5/state-annual-revenue.JPG" alt="Top 10 Highest States" width=350 height=150/>
+                        <img class="center zoom" src="img/5/annual-revenue-state.JPG" alt="Result Top 10 Highest States" width=300 height=300/></figure>
+                      <figure><img class="center zoom" src="img/5/lowest-annual-revenue.JPG" alt="DELETE Command" width=330 height=150/>
+                        <img class="center zoom" src="img/5/lowest-result-annual.JPG" alt="DELETE Command" width=300 height=300/>
+                      <figcaption>Using this syntax, the query retrieves data from the customer_staging table by calculating the total annual revenue with the SUM function on the annual_revenue column, followed by grouping the data by state. 
+                        The results are sorted by total annual revenue in descending order (from highest to lowest) and in ascending order (from lowest to highest). 
+                        The data will display the top 10 records.</figcaption>
+                      </figure></p>
+                                    
+                    <p><em>Cities</em>
+                      <figure><img class="center zoom" src="img/5/highest-city-annual.JPG" alt="DELETE Command" width=350 height=150/>
+                      <img class="center zoom" src="img/5/result-highest-city.JPG" alt="DELETE Command" width=300 height=300/>
+                    
+                    </figure>
+                      <figure><img class="center zoom" src="img/5/lowest-city-annual.JPG" alt="DELETE Command" width=350 height=150/>
+                        <img class="center zoom" src="img/5/result-lowest-city.JPG" alt="DELETE Command" width=300 height=300/>
+                        <figcaption>Using this syntax, the query retrieves data from the customer_staging table by calculating the total annual revenue with the SUM function on the annual_revenue column, followed by grouping the data by city. 
+                          The results are sorted by total annual revenue in descending order (from highest to lowest) and in ascending order (from lowest to highest). The data will display the top 10 records.
+                        </figcaption>
+                      </figure></p>
+                      <p>
+                        The data above indicates the 10 states with the highest and lowest total annual revenue. Annual revenue is a crucial metric for representing the performance and value of all services sold over a full year. 
+                        The most profitable markets, based on the top three states, are CA, OR, and FL, while the lowest profitable are OK, MT, and MN. For the top three cities, the most profitable are Cleveland, Kenner, and Riverside, while the lowest profitable are Denver, Dallas, and Elkhart. The aspects that can be analyzed are:                     
+                        <ul>
+                          <li>Budget Planning: Understanding annual revenue by state and city aids in budget planning. The company can set realistic revenue targets and draft an appropriate budget for each region.
+                          </li>
+                          <li>Adjustment of Rates and Services: This data can be used to adjust rates and services according to the characteristics and needs of each state and city, 
+                            thereby enhancing customer satisfaction and the company's competitiveness.</li>
+                          <li>Market Development: This data is important for market development. The company can identify expansion opportunities in underutilized cities with high growth potential.</li>
+                        </ul>
+                       </p>                      
+  <!--=============================================QUESTION 2=================================================================-->              
+                <blockquote><b>Question 2:
+                  <br>What type of customer generates the highest annual revenue?
+                  <br><br>Source table: customer_staging
+                </b></blockquote>
+                <figure><img class="center zoom" src="img/5/cust-type.JPG" alt="DELETE Command" width=380 height=300/>
+                <figcaption>Using this syntax, the query retrieves data from the customer_staging table by calculating the total annual revenue with the SUM function on the annual_revenue column and grouping the data by cust_type. The results are sorted by total annual revenue in descending order (from highest to lowest).
+                  </figcaption></figure>
+                <p>According to the results, there are three types of customers: retail, manufacturing, and wholesaler. The retail type generates the highest profitability, with a total annual revenue of 1,044,524,716. The results can be analyzed for these purposes:
+                  <ul>                    
+                    <li>
+                      Targeted Marketing Strategy: Understanding the customer types that generate the highest annual revenue enables the company to design a more focused and effective marketing strategy, 
+                      targeting the most profitable customer types.</li>      
+                    <li>Capacity Planning: This data enables the company to plan appropriate operational capacity, ensuring that resources such as the delivery fleet and staff are sufficient to meet demand.</li>              
+                  </ul>                
+                 
+                </p>
+  <!--=============================================QUESTION 3=================================================================-->
+                <blockquote><b>Question 3:
+                  <br>How many shipments (per month) and what is the total number of shipments that used this service?
+                  <br><br>Source table: shipment_staging</b></blockquote>
+                  <p>To answer this question, first determine the start and end dates of shipments from customers. After identifying these dates, calculate the number of shipments for each month within those years, and then calculate the total number of shipments.</p>
+                  <figure><img class="center zoom" src="img/5/date.JPG" alt="DELETE Command" width=300 height=200/>
+                  <figcaption>This part of the query uses the MAX() function on the shipment_staging column to identify the latest shipment date. The MIN() function is used on the same column to determine the earliest shipment date.</figcaption></figure>
+                    <p>The results range from January 8, 2016 (the date of the first shipment) to December 27, 2017 (the date of the last shipment). This period provides comprehensive insights into business development.</p>
+                  <figure><img class="center zoom" src="img/5/(Q3)_shipments-permonth-2016.JPG" alt="DELETE Command" width=440 height=580/></figure>
+                  <figure><img class="center zoom" src="img/5/(Q3)_shipments-permonth-2017.JPG" alt="DELETE Command" width=440 height=580/>                    
+                    <figcaption>By using this syntax, the query retrieves data from the 'shipment_staging' table, including:
+                      <ol>                      
+                      <li>Extracting the month and year from the ship_date column, formatted as a datetime, using EXTRACT(MONTH FROM ship_date) and EXTRACT(YEAR FROM ship_date).
+                      </li>
+                      <li>Counting the number of unique shipments from the ship_id column using COUNT(DISTINCT ship_id).</li>
+                      <li>Filtering the results based on the years 2016 and 2017 using the 'WHERE' clause.</li>
+                      <li>Grouping the data by month using the 'GROUP BY' clause.</li></ol>
+                      </figcaption>
+                  </figure>
+                  <figure><img class="center zoom" src="img/5/(Q3)_total-shipments.JPG" alt="DELETE Command" width=330 height=230/>
+                    
+                  <figcaption>In this part of the question, the SELECT statement uses the COUNT(DISTINCT ship_id) function to display the total number of unique shipment records from the shipment_staging table.</figcaption>
+                  </figure>
+                  <p>The data indicates that the period from June to December 2016 was the most productive, with more than 40 shipments. In 2017, the productive period was consistent throughout the year, with more than 40 shipments each month.
+                  <ul>
+                    <li>Performance Analysis: Understanding the number of shipments per month aids the company in evaluating monthly performance and assessing customer growth or decrease.</li>
+                    <li>Identification of Seasonal Trends: Monthly data assists the company in identifying seasonal patterns or trends, which can influence planning and operational strategies.
+                    </li>
+                  </ul>                   
+                    </p>
+  <!--=============================================QUESTION 4=================================================================-->
+                  <blockquote><b>Question 4:
+                    <br>What customers have the highest total annual revenue, the highest monthly revenue exceeding 20,000,000, and the highest total annual revenue in the retail category?
+                    <br><br>Source table: shipment_staging
+                  </b></blockquote>
+                  <p>Based on the question above, the goal is to reward customers to build future loyalty. For those who use the service most frequently, focusing on the best customers is important, 
+                    as retaining current customers is more efficient than acquiring new ones.
+                    The following are the queries are used:
+                  </p>
+                  <figure><img class="center zoom" src="img/5/(Q4)_cust-annual-revenue.JPG" alt="DELETE Command" width=450 height=400/>
+                  
+                 <figcaption>The SELECT statement is used to display the customer IDs from the cust_id column, the customer names from the cust_name column, 
+                  and to calculate the total annual revenue using the SUM function on the annual_revenue column. This data is retrieved from the customer_staging table. The query groups the data by cust_name using the GROUP BY clause, 
+                  sorts the results by the total_annual_revenue column in descending order (from highest to lowest) using the ORDER BY clause and limits the results to 5 rows.</figcaption></figure>
+                 
+                <figure><img class="center zoom" src="img/5/(Q4)_monthly-revenue.JPG" alt="DELETE Command" width=430 height=400/>
+                <figcaption>The SELECT statement is used to display the customer name from the cust_name column and the monthly revenue, calculated by dividing the annual revenue by 12. This data is retrieved from the customer_staging table. 
+                  The results are sorted by monthly_revenue in descending order (from highest to lowest) and limited to 5 rows.</figcaption>
+                </figure>
+                
+                <figure><img class="center zoom" src="img/5/(Q4)_cust-retail.JPG" alt="DELETE Command" width=430 height=400/>                  
+                <figcaption>The SELECT statement is used to display the customer name from the cust_name column and the annual revenue from the annual_revenue column. This data is retrieved from the customer_staging table, with the IN operator used to filter for rows in the 'retail' category. 
+                  The results are sorted by annual_revenue in descending order (from highest to lowest) and limited to 5 rows.</figcaption>
+                </figure>
+                <p>
+                  The image above displays unique customer IDs to facilitate the retrieval of information from customers and to offer benefits for other services, thereby increasing annual revenue. The purpose of awarding rewards is to recognize and incentivize loyal customers, enhance long-term relationships, 
+                  and encourage sustainable business growth. 
+                  Additionally, these approaches enable targeted marketing efforts to ensure efficient management of customer relationships.</p>
+  <!--=============================================QUESTION 5=================================================================-->
+                <blockquote><b>Question 5:
+                  <br>How many shipments are there and what is the total weight per city? Display only the top 5 cities based on the highest number of shipments.
+                  <br><br>Source tables: shipment_staging and city_staging
+                </b></blockquote>               
+                <figure><img class="center zoom" src="img/5/(Q5)_total-order-percity.JPG" alt="DELETE Command" width=480 height=400/>
+                <figcaption>
+                  To display the columns using the SELECT statement, include the city name from the city_name column, the total number of shipments calculated using the COUNT function on the cust_id column, and the total weight calculated using the SUM function on the weight column. 
+                  These columns are retrieved from the shipment_staging table and merged with the city_staging table using the LEFT JOIN. The data will be grouped by the city_name column using the GROUP BY clause. 
+                  The results will be sorted by the total number of shipments in descending order (from highest to lowest) using the ORDER BY clause and limited to 5 rows.
+                </figcaption>
+                </figure>
+                <p>
+                  According to the results from the 2016-2017 period, New York City ranks highest with a total of 31 shipments and a total shipment weight of 232,596. Based on this data, advanced analysis can be pursued, such as:
+                  <ul>
+                    <li>Inventory Planning and Management: Knowing the total number of shipments and their weight allows the company to plan and manage stock more effectively across various locations. This enables more accurate forecasting of inventory needs and ensures that stock levels are optimized to meet demand without overstocking or understocking.</li>
+                    <li>Performance Analysis: To evaluate shipment performance by city, allowing the business to identify areas that need improvement or special attention. By analyzing shipment data, the company can determine which cities have higher shipping demands and assess whether the current logistics and delivery systems meet customer expectations.</li>
+                  </ul>
+
+                </p>
+  <!--=============================================QUESTION 6=================================================================-->
+                <blockquote><b>Question 6:
+                  <br>
+                  What is the total number of customers, orders, trucks, and drivers? 
+                  <br><br>Source table: shipment_staging
+                </b></blockquote>
+                <figure><img class="center zoom" src="img/5/(Q6)_total.JPG" alt="DELETE Command" width=480 height=320/>
+                <figcaption>In this part of the query, the COUNT DISTINCT function is used to calculate the number of unique values in the cust_id, ship_id, truck_id, and driver_id columns. This data is retrieved from the shipment_staging table.
+                </figcaption>
+                </figure>
+                <p>The data above indicates that during the 2016-2017 period, the number of customers reached 100, the number of orders or shipments totaled 960, the number of trucks amounted to 12, 
+                  and the number of drivers amounted to 11. Based on this data, several advanced analyses can be conducted:
+                <ul>
+                  <li>Operational Planning: By identifying the number of customers and orders, the company can plan its operational needs, 
+                    such as the number of trucks and drivers required to fulfill demand based on the volume of orders.</li>
+                  <li>Schedule Optimization: Understanding the number of trucks and drivers enables the company to design schedules 
+                    that reduce lead times and operational costs.</li>
+                  <li>Financial Planning: This data is also important for budget planning and operational cost estimation, 
+                    as well as for planning investments in truck fleets or hiring additional drivers.</li>
+                </ul>
+                </p>
+  <!--=============================================QUESTION 7=================================================================-->
+                <blockquote><b>Question 7:
+                  <br>The total annual revenue, number of orders, number of customers, and total weight in 2016 and 2017 are categorized by customer type.
+                  <br><br>Source tables: customer_staging and shipment_staging
+                </b></blockquote>
+                <figure><img class="center zoom" src="img/5/(Q7)_total-2016.JPG" alt="DELETE Command" width=400 height=210/>
+                  <img class="center zoom" src="img/5/(Q7)_total-2016-result.JPG" alt="DELETE Command" width=450 height=180/></figure>
+                <figure><img class="center zoom" src="img/5/(Q7)_total-2017.JPG" alt="DELETE Command" width=400 height=210/>
+                  <img class="center zoom" src="img/5/(Q7)_total-2017-result.JPG" alt="DELETE Command" width=450 height=180/>
+                <figcaption>In this query, the SELECT statement is used to retrieve data from the shipment table and merged with the shipment_staging table using the LEFT JOIN., which includes:
+                  <ol>
+                    <li>Calculating the total annual revenue using the SUM function from the annual_revenue column.</li>
+                    <li>Calculating the total number of shipments by counting the rows from the ship_id column using the COUNT function.</li>
+                    <li>Calculating the total number of customers by counting the unique values from the cust_id column using the COUNT DISTINCT function.</li>
+                    <li>Calculating the total weight using the SUM function from the weight column.</li>
+                    <li>Extracting the year from the ship_date column with a datetime format using the EXTRACT YEAR function.</li>                    
+                    <li>Filtering the results based on the year 2016 or 2017 using the WHERE clause.</li>
+                    <li>Grouping all data by cust_type using the GROUP BY clause.</li>
+                    <li>Sorting the results in descending order (from highest to lowest) using the ORDER BY clause.</li>
+
+                  </ol>
+
+                </figcaption>
+                </figure>
+                <p>According to the data above, there was an increase in annual revenue, the number of orders, and total shipment weight for each category compared to 2016. 
+                  Despite these increases, the number of customers placing orders in 2017 was lower. From this data, the following can be applied for future purposes:
+                  <ul>
+                    <li>Logistics Optimization: By understanding the total weight of shipments by customer category, 
+                      the company can optimize its logistics operations to enhance efficiency and reduce costs.
+                    </li>
+                    <li>Demand Forecasting: Knowing the number of orders placed by each customer category allows 
+                      the company to predict future demand more accurately and adjust production and inventory levels accordingly.</li>                    
+                  </ul>
+                </p>
+  <!--=============================================QUESTION 8=================================================================-->
+                <blockquote><b>Question 8:
+                  <br>What type of truck and its model year carry the heaviest load? 
+                  <br><br>Source tables: shipment_staging and truck_staging             
+                </b></blockquote>
+                <figure><img class="center zoom" src="img/5/(Q8)_truck-loads.JPG" alt="DELETE Command" width=400 height=520/>
+                <figcaption>The SELECT statement is used to display the make column, the model_year column, and to calculate the total weight using the SUM function on the weight column. 
+                  The data is retrieved from the shipment_staging table and merged with the truck table using the INNER JOIN. 
+                  The results are grouped by the make and model_year columns using the GROUP BY clause and then sorted in descending order (from highest to lowest) using the ORDER BY clause.</figcaption>
+                </figure>   
+                <p>According to the data above, Mack trucks carry the heaviest weight, with the model years being 2009, 2010, 2008, and 2006. 
+                  The purposes of analyzing this data are to:
+                  <ul>
+                    <li>Support Strategic Planning: Provide insights for strategic planning and decision-making 
+                      by understanding the capabilities and performance of various truck models in handling heavy loads.</li>
+                    <li>
+                      Operational Cost Planning: By identifying the truck models that carry the heaviest loads, 
+                      the company can plan for fuel and maintenance costs more effectively.</li>
+                    <li>Performance Evaluation: This data also enables the company to evaluate truck performance based on load capacity, 
+                      assisting in the identification and replacement of inefficient or outdated trucks.</li>
+                  </ul></p>
+  <!--=============================================QUESTION 9=================================================================-->
+                <blockquote><b>Question 9:
+                  <br>Who are the drivers (first and last name) that carry the heaviest loads per month along with the destination city, 
+                  based on the model and year of the trucks they use, where the loads exceed 17.000 pounds?
+                  <br><br>Source tables: shipment_staging, driver_staging, truck_staging, and city_staging
+                </b></blockquote>
+                <figure><img class="center zoom" src="img/5/(Q9)_driver.JPG" alt="DELETE Command" width=500 height=200/>
+                  <img class="center zoom" src="img/5/(Q9)_driver-result.JPG" alt="DELETE Command" width=500 height=400/>
+                <figcaption>In this part, the SELECT statement is used to display columns retrieved from the driver_staging table and merged with the driver, customer, 
+                  truck, and city tables using the INNER JOIN function, which includes:
+                <ol>
+                  <li>Retrieving only unique values for first name and last name from the first_name and last_name columns using DISTINCT. 
+                    Then displaying the weight, make, model_year, city_name, and ship_date columns.</li>
+                  <li>Filtering the data based on weight more than 17,000 using the WHERE function.</li>
+                  <li>Sorting the results in descending order (from highest to lowest) using the ORDER BY clause.</li>
+                </ol>
+                </figcaption>
+                </figure>
+                <p>To answer the question above, filter drivers who carry loads over 17,000. The data indicates that driver Maria Craft 
+                  carried the heaviest load on July 14, 2016, amounting to 85,581. The destination was Green Bay City, and a Mack truck from the 2010 model year was used. 
+                  Maria Craft carried significantly heavier loads compared to the others. The purposes of obtaining this data are to:
+                  <ul>
+                    <li>Maintenance Planning: By knowing the loads carried and the routes driven, the company can develop a more efficient plan for truck maintenance and repairs, 
+                      reducing the risk of damage and minimizing repair costs.</li>
+                    <li>Enhancing Job Satisfaction: By providing incentives to drivers who carry the heaviest loads, the company can motivate drivers to work harder, 
+                      thereby increasing productivity and retaining them over the long term.</li>
+                  </ul>
+                </p>
+    <!--=============================================QUESTION 10=================================================================-->
+                <blockquote><b>Question 10:
+                  <br>How many times does each customer make a shipment, and what is the weight capacity of each shipment?
+                  <br><br>Source table: shipment_staging and customer_staging
+                </b></blockquote>
+                <figure><img class="center zoom" src="img/5/(Q10)_customer&shipment.JPG" alt="DELETE Command" width=500 height=140/>
+                  <img class="center zoom" src="img/5/(Q10)_customer&shipment_result.JPG" alt="DELETE Command" width=500 height=300/>
+                  <figcaption>This query uses a SELECT statement to display data retrieved from the shipment_staging table, merged with the customer_staging table using the LEFT JOIN. The data includes:
+                    <ol>
+                      <li>Retrieving data from the cust_id and cust_name columns, using the COUNT DISTINCT function for the ship_id column, and the SUM function for the weight column.</li>
+                      <li>Grouping all data by the cust_id column using the GROUP BY clause.</li>
+                      <li>Sorting the results based on the number of shipments in descending order (from highest to lowest) using the ORDER BY clause.</li>
+                    </ol></figcaption></figure>
+                    <p>The information indicates that Autoware is the customer with the highest number of shipments, with 34 shipments and a total weight of 266,211. Among the top  1-5 customers, all made more than 30 shipments with a total weight exceeding 200,000, 
+                      except for Shealy Mack Leasing, which has a total weight below 200,000. This information facilitates customer performance analysis, 
+                      as understanding the most active customers based on order shipments and shipment weight aids the company in analyzing their contribution to overall performance.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Portfolio Details Section -->
+    </main>
+   
+    <!-- End #main -->   
+
+    <a href="#" class="btn btn-lg btn-light btn-lg-square back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    
+
+    <!-- Template Main JS File -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

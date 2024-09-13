@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Portfolio Details</title>
+
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!--===========================================Breadcrumbs Section ===============================-->
+
+    <main class="main">
+
+      <!-- Page Title -->
+      <div class="page-title" data-aos="fade">
+        <div class="container d-lg-flex justify-content-between align-items-center">
+          <h1 class="mb-2 mb-lg-0">Portfolio Details</h1>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li class="current">Portfolio Details</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <!--=========================================== End Page Title ================================-->   
+      
+
+      <!-- ======= Portfolio Details Section ======= -->
+      <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">                 
+                  <div class="swiper-slide">
+                    <img src="img/1/slider.jpg" alt=""height=360/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/1/slider2.jpg" alt="" height=360/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/1/compare-model.JPG" alt="" height=360/>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+              <div class="col-lg-8">
+                <img class="circular--square" src="img/5/me.jpg" width=50 height=50/>
+                  August 10, 2024 by <u>Lutfia Hayatun Nufus</u>     
+              </div>             
+            
+            </div>
+
+            
+            <!-----------------------=========SLIDER==================================-->
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Category</strong>: Machine Learning</li>
+                  <li>
+                    <strong>Domain</strong>: Natural Language Processing (NLP)                   
+                  </li>
+                  <li>
+                    <strong>URL Source</strong>: 
+                    <a href="https://play.google.com/store/apps/details?id=com.tiket.gits&pcampaignid=web_share" target="_blank">Tiket.com</a>
+                  </li>
+                  <li>
+                    <strong>Desc</strong>: Dummy Project                    
+                  </li>                  
+                </ul>
+                </div>                 
+              </div>
+              </div>    
+                           
+
+              <div class="portfolio-description">
+                <h3>Sentiment Analysis of Tiket.com User Reviews Using a Machine Learning Approach</h3>
+                <p>
+                  &nbsp;Sentiment analysis is a technique used to identify emotions in unstructured text data, utilizing approaches from Natural Language Processing (NLP). 
+                  In the digital age, customers can easily share their opinions with a wide audience through online platforms. The objective of this project is to analyze 
+                  user reviews to gain insights into customer satisfaction and complaints by identifying positive and negative sentiments towards the various services offered by Tiket.com. 
+                  Tiket.com is an online travel agency application in Indonesia, used for booking flights, hotels, trains, car rentals, events, and more. By understanding these sentiments as a key component for evaluation in pinpointing areas of improvement
+                  and performance measurement of the system, the business can provide actionable insights that can enhance user experience and inform strategic decisions for the business, ultimately increasing customer loyalty.     
+                  <br>&nbsp;In this project, the data used consists of 2,000 newest reviews in Indonesian, collected from the Tiket.com application on Google Play Store. The challenges posed by informal language, such as slang words, abbreviations, and spelling errors, 
+                  can be addressed through various data preprocessing techniques and the application of machine learning models to achieve accurate sentiment classification.       
+                  <!--Dana is a digital wallet platform designed to facilitate
+                  transactions, simply by topping up the balance. Dana's reputation can be assessed
+                  through user reviews, in the form of feedback, criticism, and
+                  appreciation. Although the number of star ratings can indicate reviews, the content does not always match with the high star ratings. 
+                  Sentiment analysis of review content provides deeper insights into user evaluations of Dana and can be used for informed decision-making.-->
+                </p>
+                <h4>
+                  1. Data Collection</h4>
+                <p>&nbsp;The first step involves data collection using the scraping technique on Google Play Store through the Google-Play-Scraper API in Python using Google Colab. The goal is to automatically retrieve data from the newest user reviews of the Tiket.com app. 
+                  This process begins with the installation of the necessary packages, followed by web scraping techniques to collect 2000 datasets. The collected datasets will then be stored in CSV files for further analysis.
+                  In addition of storing the data, it is crucial to ensure that the reviews are accurately captured, including metadata such as the review date, rating, and user comments. This information will be valuable for subsequent stages of the analysis.
+                  <img class="center zoom" src="img/1/steps.png" alt="ERD" width=450 height=350/>
+                  <figure><img class="center zoom" src="img/1/scraping.jpg" alt="scraping data" width=380 height=260/>
+                  <figcaption><ol>
+                    <li>Install the Google Play Scraper package using !pip command and import the necessary packages.</li>
+                    <li>Determine the application ID from the Google Play Store website to retrieve review data.</li>
+                    <li>Use the lang and country parameters to retrieve reviews from Indonesia in Indonesian language.</li>
+                    <li>Use the sort and count parameter to retrieve only the newest 2.000 reviews.</li>
+                  </ol></figcaption></figure>
+                  <figure><img class="center zoom" src="img/1/data-scraping.JPG" alt="scraping data" width=400 height=350/><figcaption>The image above displays information from user reviews scraped from the Google Play Store, including column names, data types, the number of entries, and a total of 11 columns.</figcaption>
+                  </figure>                                    
+                </p>  
+                <h4>2. Data Exploration</h4>                         
+                <p>&nbsp;The next stage involves conducting data exploration to understand the results obtained from scraping the Google Play Store. The analysis will focus on the content column (user_reviews), the score column (ratings), and the at column (review dates). 
+                  Sentiment analysis will then be performed, categorizing ratings of 1-3 as negative sentiment and ratings of 4-5 as positive sentiment. To display the data in a dataframe, import the Pandas library.
+                  <figure><img class="center zoom" src="img/1/data-exploration.jpg" alt="Data Exploration" width=450 height=380/>
+                  
+                  </figure>
+                  <figure><img class="center zoom" src="img/1/date-reviews.JPG" alt="Data Exploration" width=380 height=180/></figure>
+                  <figure><img class="center zoom" src="img/1/rating.png" alt="Data Exploration" width=480 height=380/>
+                  <figcaption>The data to be processed covers the period from December 24, 2023, to August 18, 2024, based on user reviews and ratings. This includes ratings from 1 to 5, with 488 users giving a rating of 1, 69 users giving a rating of 2, 67 users giving a rating of 3, 
+                    85 users giving a rating of 4, and 1,291 users giving a rating of 5.</figcaption>
+                  </figure>
+                <br><h5>Labeling</h5>
+                  <figure><img class="center zoom" src="img/1/rating-sentiment.JPG" alt="Code Sentiment" width=480 height=100/></figure>
+                  <figure><img class="center zoom" src="img/1/sentiment.png" alt="Pie Chart Sentiment" width=320 height=330/></figure>
+                  <figure><img class="center zoom" src="img/1/sentiment-count.JPG" alt="Total of Sentiment" width=320 height=180/>
+                  <figcaption>The recapitulation results based on ratings indicate two categories: positive and negative. A rating of 4 to 5 represents very satisfied feedback in the positive category, while a rating of 1 to 3 represents dissatisfied feedback in the negative category. It is observed that the rating of 1 occurs most frequently, 
+                    with 1.376 instances, while the total number of negative ratings amounts to 624.</figcaption>
+                  </figure>
+                </p>
+                
+                <!--====================================================================================================================================================-->
+                <h4>3. Preprocessing Data</h4>           
+                <p>At this stage, the raw data will be processed into a suitable format for further analysis, involving several steps. These steps include case folding to standardize text case, spelling correction to fix misspelled words, filtering (adding new stopwords and stopword removal) to remove unimportant words, 
+                  tokenization to separate words, and stemming to stemming to remove affixes or reduce words to their base forms.</p>
+                
+                <h5>Case Folding</h5>
+                <p>To standardize textual data, such as converting all characters to lowercase and removing unnecessary elements based on the text's condition, use Regular Expressions (regex) from the 're' library. The following steps are applied for case folding:</p>
+                <ul>
+                  <li>Remove all numbers: 're.sub(r"\d+", " ", ...)'</li>
+                  <li>Remove all emoticons: 're.sub(r"[^\w\s,]", " ", ...)'</li>
+                  <li>Remove leading and trailing whitespace (including spaces, tabs, and newlines): '.strip()'</li>
+                  <li>Replace one or more whitespace characters with a single space: 're.sub("\s+", " ", ...)'</li>
+                  <li>Remove all punctuation: 're.sub(r'[^\w\s]', '', ...)'</li>
+                  <li>Replace newlines with a space: 're.sub("\n", " ", ...)'</li>
+                  <li>Convert all characters to lowercase: '.lower()'</li>
+                </ul>
+                <figure><img class="center zoom" src="img/1/case-folding.jpg" alt="Case Folding" width=420 height=380/></figure>
+                <figure><img class="center zoom" src="img/1/case-folding-result.jpg" alt="Case Folding Result" width=430 height=360/><figcaption>
+                  In this process, the user_reviews column is referenced to apply all the predefined case folding functions.
+                </figcaption>
+                </figure>
+
+                <br><h5>Spelling Correction</h5>
+                <p>To enhance the quality of textual data and achieve high accuracy, it is essential to correct spelling errors. This step is crucial for maintaining data consistency, particularly when analyzing user reviews on the Tiket.com application.</p>
+                <figure><img class="center zoom" src="img/1/spelling-correction.JPG" alt="spelling correction" width=470 height=260/></figure>
+                <figure><img class="center zoom" src="img/1/spelling-correction-result.JPG" alt="spelling-correction-result" width=430 height=360/><figcaption>
+                  The word_correct function is designed to correct spelling errors or replace specific words in user reviews from the user_reviews column, based on a correction list located in the correction-word.txt directory. This file contains pairs of words, where the first word represents the incorrect spelling or term, 
+                  and the second word is the correct replacement, with each pair separated by a colon (:).
+                </figcaption>
+                </figure>               
+                                
+                <br><h5>Tokenization</h5>
+                <p>The process of separating text into individual words, characters, or subwords using the NLTK library, which supports multiple languages.
+                  By splitting text into tokens, it becomes easier for algorithms or models to process the text further, resulting in more structured analysis and enabling the model to understand and process information more effectively.
+                </p>
+                <figure><img class="center zoom" src="img/1/tokenization.JPG" alt="Tokenization" width=350 height=100/></figure>
+                <figure><img class="center zoom" src="img/1/tokenization-result.JPG" alt="Tokenization Result" width=450 height=330/>
+                <figcaption>This code converts each review in the user_reviews column, originally consisting of entire sentences or paragraphs, into a list of individual words using the word_tokenize function from the NLTK library.</figcaption>
+                </figure>
+                <br><h5>Filtering (Stopword Removal and Addition)</h5>
+                <p>Stopwords are used to remove less important words that typically appear in large quantities, allowing the analysis to focus on more meaningful terms. The NLTK and Sastrawi libraries provide predefined stopword lists for processing the Indonesian language. However, 
+                  the default stopwords provided by these libraries may not be sufficient, so additional stopwords can be added to the list to further clean the data.</p>
+                  <figure><img class="center zoom" src="img/1/stopwords-new-list.JPG" alt="stopword list" width=400 height=230/></figure>
+                  <figure><img class="center zoom" src="img/1/stopwords-new.JPG" alt="stopword new" width=450 height=260/></figure>
+                  <figure><img class="center zoom" src="img/1/stopwords-new-result.JPG" alt="stopword new list" width=430 height=300/><figcaption>
+                    The add_stopword function removes custom stopwords specified in the stopword-new.txt file and applies them to the user_reviews column.
+                  </figcaption></figure>
+                  <br><figure><img class="center zoom" src="img/1/stopwords.JPG" alt="Tokenization" width=450 height=430/></figure>
+                  <figure><img class="center zoom" src="img/1/stopwords-result.JPG" alt="Tokenization" width=430 height=300/>
+                  <figcaption>The code prepares a comprehensive list of Indonesian stopwords by combining stopwords from the NLTK and Sastrawi libraries. The clean_stopword function then uses this combined list to remove stopwords from a given list of tokens (words). 
+                    This process is essential for cleaning text data, allowing for more meaningful analysis by filtering out common, non-informative words.</figcaption>
+                  </figure>           
+                <br><h5>Stemming</h5>
+                <p>This process uses the Indonesian language to reduce words to their base forms, thereby facilitating analysis and the retrieval of relevant information. The library utilized for stemming is Sastrawi, which is specifically designed to address the complexities of Indonesian grammar, 
+                  including prefixes, suffixes, and infixes that modify the meaning of words.
+                <figure><img class="center zoom" src="img/1/stemming.jpg" alt="Stemming" width=450 height=300/></figure>
+                <figure><img class="center zoom" src="img/1/stemming-result.jpg" alt="Stemming" width=430 height=300/>
+                <figcaption>This code uses the Sastrawi stemmer to stem the words in the user_reviews column. The factory.create_stemmer() function creates a stemmer object that performs the stemming process on Indonesian text. The clean_stem function is then used to retrieve a list of tokenized words and combine them into a single string.</figcaption>
+                </figure>                
+                </p>
+                <h5>Handling Missing values</h5>
+                <p>
+                  Handling missing values, particularly represented as NaN, is an important step in data preprocessing. Including rows with missing values can lead to misleading results or incorrect conclusions and disrupt the word cloud analysis. Removing missing values allows for a more focused sentiment analysis. 
+                  The generated word cloud will be based on reviews with available text, which aids in understanding the context of the reviews and the sentiment of user feedback.</p>
+                  <figure><img class="center zoom" src="img/1/Missing-values-info.JPG" alt="Missing Values Info" width=430 height=350/></figure> 
+                  <figure><img class="center zoom" src="img/1/missing-values-delete.JPG" alt="Missing Values Info" width=320 height=130/></figure> 
+                  <figure><img class="center zoom" src="img/1/missing-values-result.JPG" alt="Missing Values Info" width=430 height=200/>
+                  <figcaption>This code checks for and removes any rows with missing values (NaN) in the 'user_reviews' column, and then resets the DataFrame index to maintain a clean and organized structure. The isnull().sum() function is used to count and determine the number of NaN values, resulting in a total of 167 NaN values out of 2,000 data entries. 
+                    The dropna(subset=['user_reviews']) function is utilized to remove rows that contain NaN values, and the reset_index(drop=True, inplace=True) function is used to reset the DataFrame index.</figcaption>
+                  </figure> 
+                <br><h4>4. Data Visualization </h4>
+                <p>After completing data preprocessing, the next step is to utilize data visualization techniques to gain insights. These visualizations aid in identifying trends, patterns, and distributions within the data. In sentiment analysis, word clouds are particularly useful for highlighting terms most 
+                  frequently associated with positive or negative sentiments in user reviews. By focusing on the most prominent words, word clouds can quickly convey the key topics and sentiments expressed by users, effectively communicating insights to stakeholders and enabling more informed decision-making based on user feedback.
+                  The integrated libraries Matplotlib and WordCloud assist in creating detailed, informative, and visually engaging representations of sentiment analysis results.
+                </p>
+                  <figure><img class="center zoom" src="img/1/sentiment-negatif-wordcloud.png" alt="Wordcloud sentiment negative" width=430 height=380/></figure> 
+                  <figure><img class="center zoom" src="img/1/sentiment-negative-grafic.png" alt="Wordcloud sentiment negative" width=430 height=380/></figure> 
+                  <br><figure><img class="center zoom" src="img/1/sentiment-positif-wordcloud.png" alt="Wordcloud sentiment negative" width=430 height=380/></figure>
+                  <figure><img class="center zoom" src="img/1/sentiment-positive-grafic.png" alt="Wordcloud sentiment negative" width=430 height=380/></figure>  
+                  <br><figure><img class="center zoom" src="img/1/sentiment-negative-result.JPG" alt="Wordcloud sentiment negative" width=450 height=400/>
+                  <figcaption>Words such as "tiket", "pesan", "harga", and "hotel" frequently appear in negative reviews. These terms often highlight problems related to ticketing, communication issues, dissatisfaction with pricing, or complaints about accommodation. In positive reviews, words like "bagus", "bantu", "mantap", and "mudah" are commonly used. These terms reflect positive feedback, 
+                    appreciation for assistance, high satisfaction, and ease of use or convenience</figcaption>
+                  </figure> 
+                
+                  <br><h4>4. Data Splitting</h4>
+                  <p>A technique used in machine learning to split a dataset into separate subsets, data splitting involves allocating part of the data to train the model and reserving the rest to evaluate the model's performance.</p>
+                  <figure><img class="center zoom" src="img/1/split-dataset.JPG" alt="split-dataset" width=520 height=180/>
+                  <figcaption>Splitting the data from the columns 'sentiment' and 'user_reviews', which contain 1833 entries, into training and testing sets. With a test_size of 0.2, 20% of the data is allocated for testing, while 80% is reserved for training.
+                  </figcaption>
+                  </figure> 
+                  <img class="center zoom" src="img/1/split-dataset-result.JPG" alt="split-dataset" width=180 height=50/>
+
+                  <br><h4>5. Feature Engineering</h4>
+                  <p>At this stage, feature engineering involves transforming raw data into numerical formats through vectorization methods such as TF-IDF, which measures the importance of words in a document, assigning higher weights to unique words within 
+                    the document collection. Additionally, this stage includes applying techniques to address class imbalance, ensuring that the model performs reliably across all classes. These steps are essential for preparing the data in a way that enhances the accuracy and generalization of machine learning models.</p>
+                  <h5>Vectorization (TF-IDF)</h5>
+                  <figure><img class="center zoom" src="img/1/TF-IDF.JPG" alt="TF-IDF" width=430 height=130/>
+                  <figcaption>This code is used to transform text data from the training and testing sets into numerical features using TF-IDF by importing the TfidfVectorizer class from the sklearn.feature_extraction.text module. The TF-IDF method highlights the importance of words relative to their frequency across the entire dataset, enabling the model to focus on more relevant features.</figcaption>
+                  </figure>
+                     
+                  <h5>Handling Class Imbalance</h5>  
+                  <figure><img class="center zoom" src="img/1/class-imbalance.JPG" alt="TF-IDF" width=430 height=230/>
+                  <figcaption>This code uses the SMOTE technique to oversample the minority class in the training data, thereby balancing the class distribution. The SMOTE class from the imblearn library is imported and applied to resample the training features and labels.</figcaption>
+                  </figure>
+                  <br><h4>6. Model Evaluation</h4> 
+                  <p>Machine learning classification is a subset of supervised learning that involves modeling problems where the model is trained on labeled data to predict class labels for new or unseen data based on learned patterns. For example, in this project, the classification task involves categorizing user reviews 
+                    as either 'negative' or 'positive' sentiments. This approach enables the model to 
+                    differentiate between sentiment classes and apply this knowledge to new inputs.
+                    <br>Several models can be used for sentiment analysis, depending on the complexity of the task, the nature of the data, and the desired accuracy. Here is a list of commonly used models for sentiment analysis:
+                  </p>   
+                
+                  <blockquote><b><ul>
+                  <li>Random Forest</li>
+                  <li>SVM (Support Vector Machine)</li>
+                  <li>Logistic Regression</li>
+                  <li>Naive Bayes</li>
+                  <li>K-Nearest Neighbor (KNN)</li>
+                  <li>Decision Tree</li>
+                </ul></b></blockquote>
+                <p>                
+                <ol type="a"><h5><li>Random Forest</h5>
+                            <figure><img class="center zoom" src="img/1/random-forest.JPG" alt="Random Forest" width=450 height=150/></figure>           
+                            <figure><img class="center zoom" src="img/1/random-forest-result.JPG" alt="Evaluation Matrix" width=450 height=180/></figure></li>
+                    <br><h5><li>SVM (Support Vector Machine)</h5>
+                            <figure><img class="center zoom" src="img/1/svm.JPG" alt="SVM" width=400 height=80/></figure>           
+                            <figure><img class="center zoom" src="img/1/svm-result.JPG" alt="Evaluation Matrix" width=440 height=170/></figure></li>
+                    <br><h5><li>Logistic Regression</h5>
+                            <figure><img class="center zoom" src="img/1/logistic-regression.JPG" alt="SVM" width=400 height=100/></figure>           
+                            <figure><img class="center zoom" src="img/1/logistic-regression-result.JPG" alt="Evaluation Matrix" width=440 height=170/></figure></li>
+                    <br><h5><li>Naive Bayes</h5>
+                            <figure><img class="center zoom" src="img/1/naive-bayes.JPG" alt="SVM" width=400 height=100/></figure>           
+                            <figure><img class="center zoom" src="img/1/naive-bayes-result.JPG" alt="Evaluation Matrix" width=440 height=170/></figure></li>
+                    <br><h5><li>K-Nearest Neighbor (KNN)</h5>
+                            <figure><img class="center zoom" src="img/1/knn.JPG" alt="SVM" width=400 height=100/></figure>           
+                            <figure><img class="center zoom" src="img/1/knn-result.JPG" alt="Evaluation Matrix" width=440 height=170/></figure></li>
+                    <br><h5><li>Decision Tree</h5>
+                            <figure><img class="center zoom" src="img/1/decision-tree.JPG" alt="SVM" width=430 height=100/></figure>           
+                            <figure><img class="center zoom" src="img/1/decision-tree-result.JPG" alt="Evaluation Matrix" width=440 height=170/></figure></li>
+                  
+                  
+                  <br><h4>7. Conclusions</h4> 
+                  <p>The results of this project involve using 2,000 raw data obtained from web scraping Google Play Store reviews for the Tiket.com app. 
+                    The process of cleaning the data to be suitable for modeling included steps such as spelling correction, case folding, tokenization, filtering stopword removal, 
+                    stemming, and handling missing values. After cleaning, 1,833 data were available. To analyze word frequency in the cleaned data, both word cloud visualizations and bar charts were utilized, 
+                    distinguishing between positive and negative sentiments. The final stage involved a classification task, using machine learning algorithms to classify sentiment labels as either negative 
+                    or positive. The training data consisted of 1,466 samples, and the comparative results of various machine learning models are presented in the figure below.</p>
+
+                  <img class="center zoom" src="img/1/compare-model.JPG" alt="SVM" width=500 height=200/>
+                
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Portfolio Details Section -->
+    </main>
+    <!-- End #main -->
+    
+    <a href="#" class="btn btn-lg btn-light btn-lg-square back-to-top"
+    ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    
+
+    <!-- Vendor JS Files -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="vendor/typed.js/typed.umd.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
